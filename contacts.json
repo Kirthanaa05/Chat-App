@@ -1,0 +1,175 @@
+[
+  {
+    "id": 1,
+    "name" : "Liam Smith",
+    "profilePic" : "images/user1.jpg",
+    "lastMessage": "Let's catch up soon!",
+    "status":"online",
+    "time": "2 min ago",
+    "bio":"Tech enthusiast | Coffee lover | Always learning",
+    "messages":[
+      "Heyy hi! What’s up? 😃",
+      "Hi buddy! Just taking a break from studying. What about you?",
+      "Haha, same! I was trying to understand but some concepts are messing with my head.😵"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Noah Brown",
+    "profilePic":"images/user2.jpg",
+    "lastMessage": "Did you finish the task?",
+    "status":"offline",
+    "lastSeen": "5 min ago",
+    "time": "10 min ago",
+    "bio": "Traveler | Foodie | Dreamer",
+    "messages":[
+      "Heyy hi! What’s up? 😃",
+      "Hi buddy! Just taking a break from studying. What about you?",
+      "Haha, same! I was trying to understand but some concepts are messing with my head.😵"
+    ]
+  },
+  {
+    "id": 3,
+    "name":"Emma Johnson",
+    "profilePic":"images/user3.jpg",
+    "lastMessage":"Hey, how's your day?",
+    "status":"online",
+    "time": "22 min ago",
+    "bio":"Software Developer | Music addict | Problem solver",
+    "messages":[
+      "Heyy hi! What’s up? 😃",
+      "Hi buddy! Just taking a break from studying. What about you?",
+      "Haha, same! I was trying to understand but some concepts are messing with my head.😵"
+    ]
+  },
+  {
+    "id": 4,
+    "name":"Ethan Wilson",
+    "profilePic":"images/user4.jpg",
+    "lastMessage":"Good morning!",
+    "status":"offline",
+    "lastSeen":"30 min ago",
+    "time":"45 min ago",
+    "bio":"Life is a journey, enjoy the ride!",
+    "messages":[
+      "Heyy hi! What’s up? 😃",
+      "Hi buddy! Just taking a break from studying. What about you?",
+      "Haha, same! I was trying to understand but some concepts are messing with my head.😵"
+    ]
+  },
+  {
+    "id": 5,
+    "name":"Sophia Williams",
+    "profilePic":"images/user5.jpg",
+    "lastMessage":"Meeting at 3 PM?",
+    "status":"online",
+    "time":"55 min ago",
+    "bio":"Passionate about tech | Fitness freak | Gamer",
+    "messages":[
+      "Heyy hi! What’s up? 😃",
+      "Hi buddy! Just taking a break from studying. What about you?",
+      "Haha, same! I was trying to understand but some concepts are messing with my head.😵"
+    ]
+  },
+  {
+    "id": 6,
+    "name":"Mason Anderson",
+    "profilePic":"images/user6.jpg",
+    "lastMessage":"What's the plan for tonight?",
+    "status":"online",
+    "time": "1 hour ago",
+    "bio":"Bookworm | Music lover | Trying to code",
+    "messages":[
+      "Heyy hi! What’s up? 😃",
+      "Hi buddy! Just taking a break from studying. What about you?",
+      "Haha, same! I was trying to understand but some concepts are messing with my head.😵"
+    ]
+  },
+  {
+    "id": 7,
+    "name":"Olivia Davis",
+    "profilePic":"images/user7.jpg",
+    "lastMessage":"See you at the event!",
+    "status":"offline",
+    "lastSeen":"1 hour ago",
+    "time": "2 hours ago",
+    "bio":"Fitness enthusiast | Movie buff | Love to explore",
+    "messages":[
+      "Heyy hi! What’s up? 😃",
+      "Hi buddy! Just taking a break from studying. What about you?",
+      "Haha, same! I was trying to understand but some concepts are messing with my head.😵"
+    ]
+  },
+  {
+    "id": 8,
+    "name":"Ava Martinez",
+    "profilePic":"images/user8.jpg",
+    "lastMessage":"I'll call you later.",
+    "status":"online",
+    "time": "3 hours ago",
+    "bio":"Nature lover | Dream big, work hard!",
+    "messages":[
+      "Heyy hi! What’s up? 😃",
+      "Hi buddy! Just taking a break from studying. What about you?",
+      "Haha, same! I was trying to understand but some concepts are messing with my head.😵"
+    ]
+  },
+  {
+    "id": 9,
+    "name":"Isabella Taylor",
+    "profilePic":"images/user9.jpg",
+    "lastMessage":"Let's go shopping",
+    "status":"offline",
+    "lastSeen":"2 hours ago",
+    "time": "4 hours ago",
+    "bio": "Adventure seeker | Tea over coffee any day",
+    "messages":[
+      "Heyy hi! What’s up? 😃",
+      "Hi buddy! Just taking a break from studying. What about you?",
+      "Haha, same! I was trying to understand but some concepts are messing with my head.😵"
+    ]
+  },
+  {
+    "id": 10,
+    "name":"Mia Thomas",
+    "profilePic": "images/user10.jpg",
+    "lastMessage":"I'll send you the details.",
+    "status":"online",
+    "time":"5 hours ago",
+    "bio":"Coding & coffee | Stay curious",
+    "messages":[
+      "Heyy hi! What’s up? 😃",
+      "Hi buddy! Just taking a break from studying. What about you?",
+      "Haha, same! I was trying to understand but some concepts are messing with my head.😵"
+    ]
+  },
+  {
+    "id": 11,
+    "name":"Charlotte Haris",
+    "profilePic":"images/user11.jpg",
+    "lastMessage":"Happy Birthday!",
+    "status":"offline",
+    "lastSeen": "2 hours ago",
+    "time": "7 hours ago",
+    "bio":"Photography | Tech geek | Love trying new things",
+    "messages":[
+      "Heyy hi! What’s up? 😃",
+      "Hi buddy! Just taking a break from studying. What about you?",
+      "Haha, same! I was trying to understand but some concepts are messing with my head.😵"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Amelia Clark",
+    "profilePic":"images/user12.jpg",
+    "lastMessage":"Can we reschedule the meeting?",
+    "status":"online",
+    "time":"8 hours ago",
+    "bio": "Traveler | Aiming for the best",
+    "messages":[
+      "Heyy hi! What’s up? 😃",
+      "Hi buddy! Just taking a break from studying. What about you?",
+      "Haha, same! I was trying to understand but some concepts are messing with my head.😵"
+    ]
+  }
+]

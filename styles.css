@@ -1,1 +1,293 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.chat-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+/* left panel */
+.chat-session {
+  width: 30%;
+  background-color: #0097A7;
+  color: white;
+  padding: 10px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #ddd transparent;
+}
+
+.chat-session h2{
+  padding-bottom: 5px;
+  border-bottom: 2px solid #fff;
+}
+
+.contacts-list {
+  margin-top: 20px;
+}
+
+.contact {
+    height: 75px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid #fff;
+    padding: 10px 5px;
+    cursor: pointer;
+}
+
+.contact:hover{
+  background-color: rgb(167, 167, 167);
+}
+
+.contact:active{
+  background-color: rgb(0, 60, 80);
+}
+
+.contact img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.user-details{
+  width: 100%;
+}
+
+.user-details .user-name{
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.user-details p{
+  font-size: 11px;
+  margin: 5px 0px;
+}
+
+.time-texted{
+  font-size: 11px; 
+  width: 30%;
+}
+
+.chat-header{
+  position: relative;
+}
+
+.online-status {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(48, 243, 48);
+  border-radius: 50%;
+  position: absolute;
+  left: 38px;
+}
+
+/* right panel */
+.chat-details {
+  width: 70%;
+  overflow-y: auto;
+  padding: 20px;
+  background-color: white;
+  scrollbar-width: thin;
+  scrollbar-color: #ddd transparent;
+}
+
+.chat-details-header{
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #bbb;
+}
+
+.chat-details-header .close{
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.chat-header {
+  display: flex;
+  align-items: center;
+  padding: 10px 0px;
+  border-bottom: 1px solid #0097A7;
+}
+
+.chat-header img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.chat-info h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.chat-info p {
+  margin: 3px 0;
+  font-size: 14px;
+  color: gray;
+}
+
+.chat-messages {
+  height: 400px;
+  overflow-y: auto;
+  padding: 10px;
+  border-bottom: 2px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+}
+
+.message{
+  margin: 10px 0px;
+}
+
+.received{
+  background-color: #f1f0f0;
+  align-self: flex-start;
+  border-radius: 10px 10px 10px 0px;
+}
+.sent{
+  background-color: #0097A7;
+  color: white;
+  align-self: flex-end;
+  border-radius: 10px 10px 0px 10px;
+}
+
+.message p{
+  padding: 0px 10px;
+}
+
+.chat-input {
+  display: flex;
+  margin-top: 10px;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.chat-input button {
+  padding: 10px 15px;
+  background-color: #0097A7;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+/* back button */
+.back-btn{
+  display: none;
+  border: none;
+  color: #000;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 40%;
+}
+
+/* responsiveness */
+/* media queries */
+@media(max-width: 576px){
+  .chat-container{
+    display: block;
+  }
+  .chat-session{
+    width: 100%;
+    display: block;
+  }
+  .contacts-list{
+    margin-top: 0px;
+  }
+  .chat-details{
+    display: none;
+    width: 100%;
+    padding: 5px 2px;
+  }
+  .chat-details-header .close{
+    font-size: 1rem;
+    margin-right: 5px;
+  }
+  .back-btn{
+    display: inline-block;
+    margin-left: 5px;
+  }
+  .contact{
+    padding: 10px 0px;
+  }
+  .user-details{
+    width: 60%;
+  }
+  .chat-info h3{
+    font-size: 1rem;
+  }
+  .chat-info p{
+    font-size: 12px;
+  }
+  .message{
+    font-size: 12px;
+  }
+}
+
+.chat-details.active{
+  display: block;
+}
+.chat-session.hidden{
+  display: none;
+}
+
+@media(max-width: 768px){
+  .user-details .user-name{
+    font-size: 12px;
+  }
+  .contact img{
+    margin-right: 5px;
+  }
+  .time-texted{
+    font-size: 10px;
+  }
+  .chat-details{
+    padding: 5px 2px;
+  }
+  .chat-details-header h2{
+    margin: 30px 0px;
+  }
+  .chat-info h3{
+    font-size: 1rem;
+  }
+  .chat-info p{
+    font-size: 12px;
+  }
+  .message{
+    font-size: 12px;
+    max-width: 250px;
+  }
+  .chat-messages{
+    padding: 10px 5px;
+    max-width: 470px;
+  }
+  .chat-input{
+    max-width: 470px;
+    margin: 10px 5px;
+  }
+}
 

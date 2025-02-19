@@ -1,17 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <!-- css -->
-   <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <!-- css -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  
+    <div class="chat-container">
+        <!-- Left Panel -->
+        <div class="chat-session">
+            <h2>CHAT SESSION</h2>
+            <div class="contacts-list" id="contacts-List"></div> <!--contacts list-->
+        </div>
 
-
-  <!-- js -->
-   <script src="index.js"></script>
+        <!-- Right Panel -->
+        <div class="chat-details">
+            <div class="chat-details-header">
+                <button class="back-btn" id="backBtn">&#8592;</button> <!--back button-->
+                <h2>CHAT DETAILS</h2>
+                <span class="close">X</span>
+            </div>
+            
+            <div id="chatHeader" class="chat-header">
+                <img id="chat-ProfilePic" src="" alt="">
+                <div class="chat-info">
+                    <h3 id="chat-Name"></h3>
+                    <p id="chat-Bio"></p>
+                    <p id="chat-Status"></p>
+                </div>
+            </div>
+            <div class="chat-messages" id="chat-Messages"></div>
+            <div class="chat-input">
+                <input type="text" id="message-Input" placeholder="Type your message here..." />
+                <button id="send-Btn">Send</button>
+            </div>
+        </div>
+    </div>
+    <!-- js -->
+     <script src="index.js"></script>
 </body>
 </html>
