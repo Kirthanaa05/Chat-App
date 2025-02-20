@@ -25,6 +25,19 @@ body {
   scrollbar-color: #ddd transparent;
 }
 
+#searchUser{
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 50%;
+}
+
+#charWordCounter{
+  font-size: 12px;
+  text-align: center;
+  color: gray;
+}
+
 .chat-session h2{
   padding-bottom: 5px;
   border-bottom: 2px solid #fff;
