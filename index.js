@@ -7,7 +7,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const chatMessages = document.getElementById("chat-Messages");
   const messageInput = document.getElementById("message-Input");
   const sendBtn = document.getElementById("send-Btn");
+  const searchUserInput = document.getElementById("searchUser")
+  const charWordCounter = document.getElementById("charWordCounter")
 
+  
   let contacts = [];
   let currentChat = null;
 
@@ -25,9 +28,10 @@ document.addEventListener("DOMContentLoaded", function () {
           }
         });
 //left panel contacts list
-  function renderContacts() {
+  function renderContacts(searchTerm = "") {
       contactsList.innerHTML = "";
       contacts.forEach(contact => {
+          if(!contact.name.toLowerCase().includes(searchTerm.toLowerCase())) return
           const contactEle = document.createElement("div");
           contactEle.classList.add("contact");
           contactEle.innerHTML = `
@@ -44,6 +48,17 @@ document.addEventListener("DOMContentLoaded", function () {
           contactsList.appendChild(contactEle);
       });
   }
+  //search user
+  searchUserInput.addEventListener("input", function(){
+    renderContacts(this.value)
+  })
+  //character count
+  messageInput.addEventListener("input",function(){
+    const text = this.value
+    const charCount = text.length
+    const wordCount = text.trim().split(/\s+/).filter(word => word !== "").length;
+    charWordCounter.textContent = `Current characters: ${charCount} and current words: ${wordCount}`
+  })
   //current clicked person contact and message on the right panel
   function openChat(contact) {
       currentChat = contact;
